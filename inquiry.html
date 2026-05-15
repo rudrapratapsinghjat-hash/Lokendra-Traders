@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inquiry / Quote Form | Construction Materials Berasia</title>
+  <meta name="description" content="Request a quote for cement, building materials, hardware, pipes, fittings, sanitary items, and bulk supply in Berasia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">VB</span><span><strong>Vidisha BuildMart</strong><small>Industrial Supply Network</small></span></a><button class="nav-toggle" type="button" aria-label="Open menu">☰</button><nav class="main-nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="nav-cta active" href="inquiry.html">Get Quote</a></nav></header>
+  <main>
+    <section class="page-hero" style="--bg:url('https://images.unsplash.com/photo-1590725175574-5f7f710c9f14?auto=format&fit=crop&w=1800&q=85')"><div class="page-hero-inner reveal"><p class="eyebrow">Inquiry / Quote Form</p><h1>Send your requirement. Get a fast material response.</h1><p>For cement, bulk construction supply, hardware, pipes, fittings, sanitary items, and project material planning.</p></div></section>
+    <section class="quote-layout section-pad">
+      <form class="quote-form glass-card reveal" novalidate>
+        <label>Name<input name="name" type="text" placeholder="Your full name" required></label>
+        <label>Phone<input name="phone" type="tel" placeholder="10-digit phone number" pattern="[0-9]{10}" required></label>
+        <label>Customer Type<select name="type" required><option value="">Select one</option><option>Contractor</option><option>Builder</option><option>House Owner</option><option>Retail Customer</option></select></label>
+        <label>Product Requirement<select name="product" required><option value="">Select product</option><option>Cement</option><option>Building Materials</option><option>Hardware</option><option>Pipes & Fittings</option><option>Sanitary Items</option><option>Bulk Supply</option></select></label>
+        <label>Quantity / Notes<textarea name="notes" rows="5" placeholder="Tell us quantity, site location, preferred brand, delivery requirement" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Send Quote Request</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <div class="quote-side reveal">
+        <p class="eyebrow">Direct Line</p>
+        <h2>Prefer speaking first?</h2>
+        <p>Call or WhatsApp the supply desk with product name, quantity, delivery area, and required date.</p>
+        <a class="btn btn-ghost" href="tel:+917999752109">Call 7999752109</a>
+        <a class="btn btn-primary" href="https://wa.me/917999752109?text=Hello%2C%20I%20want%20a%20construction%20material%20quote." target="_blank" rel="noopener">WhatsApp Quote</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div><strong>Vidisha BuildMart</strong><p>Quote form with front-end validation.</p></div><div><a href="tel:+917999752109">7999752109</a></div><div>Vidisha Road, Berasia</div></footer>
+  <div class="floating-actions"><a href="tel:+917999752109" class="float-call">Call</a><a href="https://wa.me/917999752109" class="float-whatsapp">WhatsApp</a></div><script src="app.js"></script>
+</body>
+</html>
